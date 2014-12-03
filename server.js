@@ -151,7 +151,9 @@ function clean (data) {
   delete data.registeredusers
 
   if (data.days) {
-    var s = data.month.split('\n')
+    if (data.month.indexOf('\n') !== -1) var i = '\n'
+    else var i = ' '
+    var s = data.month.split(i)
       , month = s[0].replace(/\ /g, '')
       , year = s[1].replace(/\ /g, '')
       ;
