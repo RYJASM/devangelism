@@ -24,4 +24,8 @@ $(document).ready(function() {
           isSet = false;
       }
   });
+
+  setTimeout(function(){
+    $(".pulse").addClass('show');
+  }, 800)
 });
