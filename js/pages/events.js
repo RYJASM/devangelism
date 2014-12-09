@@ -114,7 +114,6 @@
           packCalculations2 = pack.nodes(getEventView()),
           packCalculations3 = pack.nodes(getAttendeeView()),
           name, type, title, location;
-          
 
           $.each(packCalculations1, function(index, value) {
             if (index > 0) {
@@ -124,7 +123,7 @@
 
           $.each(packCalculations2, function(index, value) {
             if (index > 0) {
-              
+
 
               $.each(value.events, function(index, eventValue) {
                   name = value.name,
@@ -144,12 +143,17 @@
               $("#attendee-table").append('<li><a href="#" data-overlay-id="attendee-' + value.name + '"><p class="label">'+ value.name +'</p><span class="count">' + value.count + ' Conferences</span></a></li>');
             }
           });
+
+          var ul = $('ul#month-table')
+          ul.children().each(function(i,li){ul.prepend(li)})
+          ul = $('ul#event-table')
+          ul.children().each(function(i,li){ul.prepend(li)})
     }
 
     $(function () {
 
       render(window.viewportWidth > 1024 ? 1024 : window.viewportWidth);
-      
+
       $me.on('click', 'a[data-overlay-id]', function (e) {
         var thisId = $(this).closest('ul').attr("id");
 
@@ -160,7 +164,7 @@
           if(overlay) {
             window.clickedOverlayTriggeredPage = true;
             window.location.hash = '#events/' + overlay;
-          } 
+          }
 
         } else {
           var deck = $(this).next('.deck');
