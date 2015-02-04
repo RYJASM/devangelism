@@ -184,7 +184,7 @@ function clean (data) {
 
 function getSpreadsheet () {
   gsheets.auth(
-    { email: 'mikeal@digitalocean.com'
+    { email: 'etel@digitalocean.com'
     , password: password
     },
     function(err) {
