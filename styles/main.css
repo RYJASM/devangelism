@@ -398,6 +398,28 @@
   width: 128px;
 }
 
+#photo-grid li.angelina span{
+  background: #F0F0F0;
+  width: 174px;
+  border-radius: 50%;
+  height: 174px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#photo-grid li.angelina span:before {
+  content: 'Coming Soon';
+  text-align: center;
+  line-height: 180px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+#photo-grid li.angelina a:hover span {
+  background: #F7F7F7;
+}
+
 #photo-grid li.mikeal span{
   background-position: -169px 0;
   width: 120px;
@@ -529,7 +551,17 @@ button {
   display: block;
   background-image: url("../img/evangelism-sprite.png");
   top: 0;
+}
 
+[data-id="angelina"] .overlay-wrap .photo, #angelina .overlay-wrap .photo{
+  background: none;
+  width: auto;
+  height: auto;
+  margin-left: 0;
+}
+
+#angelina.overlay.who h1 {
+  padding-top: 15px;
 }
 
 [data-id="mikeal"] .overlay-wrap .photo, #mikeal .overlay-wrap .photo{
