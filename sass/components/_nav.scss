@@ -5,7 +5,7 @@
 	height:76px;
 	width:100%;
 	z-index:2;
-	background:#3682b9;
+	background:#0056A4;
 	@include transform(translateZ(0) scale(1));
 	@include perspective(1000);
 	@include backface-visibility(hidden);

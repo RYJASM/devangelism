@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'SentinelSSm-Bold';
+  src: url('../fonts/SentinelSSm-Bold.eot');
+  src: local('☺'),
+  url('../fonts/SentinelSSm-Bold.woff') format('woff'),
+  url('../fonts/SentinelSSm-Bold.ttf') format('truetype'),
+  url('../fonts/SentinelSSm-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @-webkit-keyframes grow {
   /* line 2, ../sass/components/_animations.scss */
   from {
@@ -385,7 +396,7 @@
 #photo-grid li a h3{
   font-weight: 400;
   font-size: 23px;
-  margin: 23px 0 4px 0;
+  margin: 23px 0 0 0;
 }
 
 #photo-grid li a p{
@@ -398,51 +409,19 @@
   width: 128px;
 }
 
-#photo-grid li.angelina span{
-  background: #F0F0F0;
-  width: 174px;
-  border-radius: 50%;
-  height: 174px;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-#photo-grid li.angelina span:before {
-  content: 'Coming Soon';
-  text-align: center;
-  line-height: 180px;
-  color: #ccc;
-  font-size: 18px;
-}
-
-#photo-grid li.angelina a:hover span {
-  background: #F7F7F7;
-}
-
-#photo-grid li.mikeal span{
-  background-position: -169px 0;
-  width: 120px;
+#photo-grid li.angelina span {
+  background-position: 0 0;
+  width: 143px;
 }
 
 #photo-grid li.erika span{
-  background-position: -319px 0px;
+  background-position: -156px 0;
   width: 151px;
 }
 
 #photo-grid li.annie span{
-  background-position: -486px 0;
+  background-position: -322px 0;
   width: 147px;
-}
-
-#photo-grid li.juliann span{
-  background-position: -659px 0;
-  width: 132px;
-}
-
-#photo-grid li.kaushal span{
-  background-position: -834px 0;
-  width: 113px;
 }
 
 
@@ -554,51 +533,27 @@ button {
 }
 
 [data-id="angelina"] .overlay-wrap .photo, #angelina .overlay-wrap .photo{
-  background: none;
-  width: auto;
-  height: auto;
-  margin-left: 0;
+  background-position: 0 0px;
+  width: 143px;
+  margin-left: -72px;
 }
 
 #angelina.overlay.who h1 {
   padding-top: 15px;
 }
 
-[data-id="mikeal"] .overlay-wrap .photo, #mikeal .overlay-wrap .photo{
-  background-position: -169px 0;
-  width: 120px;
-  margin-left: -60px;
-}
-
 [data-id="erika"] .overlay-wrap .photo, #erika .overlay-wrap .photo{
-  background-position: -319px 0px;
+  background-position: -156px 0px;
   width: 151px;
   margin-left: -75px;
 }
 
-[data-id="john"] .overlay-wrap .photo, #john .overlay-wrap .photo{
-  background-position: 0 0;
-  width: 128px;
-  margin-left: -64px;
-}
-
 [data-id="annie"] .overlay-wrap .photo, #annie .overlay-wrap .photo{
-  background-position: -486px 0;
+  background-position: -322px 0;
   width: 147px;
   margin-left: -73px;
 }
 
-[data-id="juliann"] .overlay-wrap .photo, #juliann .overlay-wrap .photo{
-  background-position: -659px 0;
-  width: 132px;
-  margin-left: -66px;
-}
-
-[data-id="kaushal"] .overlay-wrap .photo, #kaushal .overlay-wrap .photo{
-  background-position: -834px 0;
-  width: 113px;
-  margin-left: -56px;
-}
 
 /* line 43, ../sass/components/_overlay.scss */
 .overlay.who h1, .overlay.who h3 {
@@ -1417,11 +1372,11 @@ section {
 }
 
 /* line 45, ../sass/_shell.scss */
-section h1 {
+section h3 {
   position: relative;
   display: inline-block;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 28px;
   margin: 0 0 8px;
   overflow: hidden;
   max-width: 100%;
@@ -1446,7 +1401,7 @@ section h1 + p {
 @media screen and (max-width: 820px) {
 
   /* line 87, ../sass/_shell.scss */
-  section h1.section-head {
+  section h3.section-head {
     font-size: 35px;
     margin-bottom: 3px;
   }
@@ -1462,7 +1417,7 @@ section h1 + p {
 }
 
 @media screen and (max-width: 500px) {
-  section h1.section-head {
+  section h3.section-head {
     font-size: 30px;
     margin-bottom: 2px;
   }
@@ -1967,20 +1922,13 @@ section h1 + p {
 
 /* line 7, ../sass/_home.scss */
 #wrap #home h1, #wrap [data-id="home"] h1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  width: 195px;
-  height: 31px;
-  font-size: 0 !important;
-  background-image: url("../img/DO_Logo.svg");
-  background-size: 195px 31px;
-  background-repeat: no-repeat;
-  padding: 0;
-  margin-top: 6px;
-  left: 50%;
-  margin-left: -500px;
+  font-family: 'SentinelSSm-Bold';
+  color: #FFF;
+  font-size: 56px;
+  font-weight: normal;
+  margin-bottom: 15px;
 }
+
 /* line 21, ../sass/_home.scss */
 #wrap #home h1:before, #wrap #home h1:after, #wrap [data-id="home"] h1:before, #wrap [data-id="home"] h1:after {
   display: none;
@@ -2009,7 +1957,7 @@ section h1 + p {
 
 #wrap #home p, #wrap [data-id="home"] p {
   color: #fff;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 1.4;
   margin-top: 4px;
   margin-bottom: 38px;
@@ -2085,6 +2033,21 @@ a.next {
 /* line 1, ../sass/_locations.scss */
 #wrap #locations, #wrap [data-id="locations"] {
   background: #fff;
+}
+
+
+h3.section-head {
+  font-family: 'SentinelSSm-Bold';
+  font-size: 28px;
+  font-weight: normal;
+  color: #373737;
+}
+
+#wrap p.sub-head {
+  font-size: 19px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 36px;
 }
 
 /* line 6, ../sass/_locations.scss */
