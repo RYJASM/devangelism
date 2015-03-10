@@ -1927,6 +1927,7 @@ section h1 + p {
   font-size: 56px;
   font-weight: normal;
   margin-bottom: 15px;
+  margin-top: 0;
 }
 
 /* line 21, ../sass/_home.scss */
